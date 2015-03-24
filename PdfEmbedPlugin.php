@@ -93,8 +93,9 @@ class PdfEmbedPlugin extends Omeka_Plugin_AbstractPlugin
             . $hash;
         $attrs['style'] = "width: 100%; height: {$height}px";
         $attrString = tag_attributes($attrs);
+        $title = $file->original_filename;
 
-        return "<iframe {$attrString}></iframe>";
+        return "<iframe {$attrString} title={$title}></iframe>";
     }
 
     public static function _getSettings()
