@@ -5402,6 +5402,7 @@ function webViewerInitialized() {
   fileInput.id = 'fileInput';
   fileInput.className = 'fileInput';
   fileInput.setAttribute('type', 'file');
+  fileInput.setAttribute('title', 'Upload file');
   fileInput.oncontextmenu = noContextMenuHandler;
   document.body.appendChild(fileInput);
 
